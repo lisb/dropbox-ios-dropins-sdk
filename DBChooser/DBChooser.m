@@ -58,7 +58,7 @@
     
     NSURL *chooserURL = [[self class] dbc_chooserURLForAppKey:_appKey linkType:linkType];
     if ([[UIApplication sharedApplication] canOpenURL:chooserURL]) {
-        [[UIApplication sharedApplication] openURL:chooserURL];
+        [[UIApplication sharedApplication] openURL:chooserURL options:@{} completionHandler:^(BOOL success) {}];
     } else {
         [self dbc_openNoDropboxInstalledViewFromViewController:topViewController];
     }
