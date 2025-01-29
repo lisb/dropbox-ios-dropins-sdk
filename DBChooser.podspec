@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DBChooser"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "Add Dropbox to your app with a few lines of code."
   s.homepage     = "https://www.dropbox.com/developers/dropins"
   s.license      = { :type => "MIT", :file => "LICENSE" }
