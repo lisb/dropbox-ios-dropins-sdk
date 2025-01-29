@@ -6,5 +6,4 @@
 extern NSString *kDBCProtocol;
 extern NSString *kDBCAPIVersion;
 
-extern NSString *kDBCIPhoneAppStoreURL;
-extern NSString *kDBCIPadAppStoreURL;
+extern NSString *kDBCAppStoreURL;

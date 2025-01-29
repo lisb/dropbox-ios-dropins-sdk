@@ -65,9 +65,7 @@ static const CGFloat sNoDropboxViewSubtitlePaddingPad = 160;
 
 - (void)dbc_didPressInstall:(id)sender
 {
-    NSString *appStoreURLString = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ?
-                                  kDBCIPadAppStoreURL : kDBCIPhoneAppStoreURL;
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appStoreURLString] options:@{} completionHandler:^(BOOL success) {}];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:kDBCAppStoreURL] options:@{} completionHandler:^(BOOL success) {}];
     [self dbc_finished];
 }
 
